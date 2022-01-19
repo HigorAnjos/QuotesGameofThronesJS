@@ -32,7 +32,6 @@ function createCustomElement(element, className, innerText) {
 function createProductItemElement({ title, fullName, imageUrl }) {
   const section = document.createElement('section');
   section.className = 'char';
-
   section.appendChild(createCustomElement('span', 'char__name', fullName));
   section.appendChild(createCustomElement('span', 'char__title', title));
   section.appendChild(createCharacterImageElement(imageUrl));
